@@ -12,9 +12,6 @@ x = response.json()
 webhookURL = x['webhook']
 accessToken = x['accessToken']
 
-print("Webhook URL:", webhookURL)
-print("Access Token:", accessToken)
-
 SQL_QUERY = """SELECT
     p.AMOUNT AS SALARY,
     CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS NAME,
